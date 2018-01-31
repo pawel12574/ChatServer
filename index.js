@@ -22,7 +22,7 @@ io.on('connection', socket => {
 
 function sendMessage(message){
     for (const s of sockets) {
-        s.emit('message', {data: message});
+        s.emit('message', message);
     }
 }
 
